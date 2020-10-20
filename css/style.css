@@ -1,63 +1,235 @@
-/*
-Error: Invalid CSS after "...ddle.net/CtphN/": expected "{", was ""
-        on line 14 of /Users/murad/Desktop/upcreate/sass/_common.scss
-        from line 1 of /Users/murad/Desktop/upcreate/sass/style.scss
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
 
-9: a:hover{
-10:     text-decoration: none;
-11:     color: initial;
-12: }
-13: 
-14: http://jsfiddle.net/CtphN/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-Backtrace:
-/Users/murad/Desktop/upcreate/sass/_common.scss:14
-/Users/murad/Desktop/upcreate/sass/style.scss:1
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ddle.net/CtphN/\": expected \"{\", was \"\"\A         on line 14 of /Users/murad/Desktop/upcreate/sass/_common.scss\A         from line 1 of /Users/murad/Desktop/upcreate/sass/style.scss\A \A 9: a:hover{\A 10:     text-decoration: none;\A 11:     color: initial;\A 12: }\A 13: \A 14: http://jsfiddle.net/CtphN/"; }
+a:hover {
+  text-decoration: none;
+  color: initial;
+}
+
+a {
+  outline: transparent;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  z-index: 9999;
+}
+header ul.menu {
+  width: 100%;
+}
+header ul.menu li a {
+  font-size: 22px;
+  color: black;
+  display: inline-block;
+  width: 100%;
+}
+header ul.social-icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header ul.social-icons li {
+  margin-right: 20px;
+}
+header ul.social-icons li a {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  display: inline-block;
+}
+header ul.social-icons li a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+#large-screens {
+  height: 100vh;
+  width: 100px;
+}
+#large-screens .overlay {
+  height: 100vh;
+  background-color: white;
+  width: 100px;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+  border-right: 1px solid #e1e1e1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#large-screens .overlay.active {
+  border-color: transparent;
+}
+#large-screens .logo {
+  padding: 30px 10px;
+}
+#large-screens .menu-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#large-screens nav {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  left: -200px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  z-index: 4;
+  background-color: white;
+}
+#large-screens nav ul.menu {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#large-screens nav ul.menu li a {
+  font-weight: bold;
+}
+#large-screens nav ul.menu li a span {
+  position: relative;
+  letter-spacing: 0px;
+}
+#large-screens nav ul.menu li a span::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: black;
+  width: 0%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#large-screens nav ul.menu li a:hover span::before {
+  width: 100%;
+}
+#large-screens nav ul.menu li a.active span::before {
+  width: 100%;
+}
+#large-screens nav ul.social-icons {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
+#large-screens nav.active {
+  left: 100px;
+}
+
+#small-screens {
+  width: 100%;
+  top: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+#small-screens .logo a img {
+  height: 60px;
+}
+#small-screens nav .menu a {
+  font-weight: 600;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+#mainPageContent .item-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+#mainPageContent .item-wrapper .custom-items {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translate3d(0, 0, 0) scale(1.06);
+          transform: translate3d(0, 0, 0) scale(1.06);
+  -webkit-transition: all 0.35s cubic-bezier(0.4, 0.12, 0.4, 0.85);
+  transition: all 0.35s cubic-bezier(0.4, 0.12, 0.4, 0.85);
+  width: 100%;
+}
+#mainPageContent .item-wrapper .overlay {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#mainPageContent .item-wrapper .overlay .content {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+  color: white;
+  text-align: right;
+}
+#mainPageContent .item-wrapper .overlay .content h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+#mainPageContent .item-wrapper .overlay .content p {
+  font-size: 17px;
+  padding-left: 40%;
+  margin: 10px 0;
+}
+#mainPageContent .item-wrapper .overlay .content a {
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+  position: relative;
+}
+#mainPageContent .item-wrapper .overlay .content a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: white;
+  height: 2px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 100%;
+  opacity: 0;
+}
+#mainPageContent .item-wrapper .overlay .content a:hover::before {
+  opacity: 1;
+}
+#mainPageContent .item-wrapper:hover .custom-items {
+  -webkit-transform: translate3d(3%, 0, 0) scale(1.06);
+          transform: translate3d(3%, 0, 0) scale(1.06);
+}
+#mainPageContent .item-wrapper:hover .overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #mainPageContent .item-wrapper .overlay .content p {
+    padding-left: 20%;
+  }
+}
+@media (min-width: 992px) {
+  #mainPageContent {
+    margin-left: 100px;
+    margin-top: 0;
+  }
+}

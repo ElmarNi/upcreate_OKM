@@ -1,3 +1,82 @@
 #mainPageContent{
-    
+    .item-wrapper{
+        overflow: hidden;
+        position: relative;
+        .custom-items{
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: translate3d(0,0,0) scale(1.06);
+            transition: all .35s cubic-bezier(.4,.12,.4,.85);
+            width: 100%;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(0deg,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
+            transform: translateY(100%);
+            transition: all .3s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+            .content{
+                position: absolute;
+                right: 60px;
+                bottom: 30px;
+                color: white;
+                text-align: right;
+                h1{
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                p{
+                    font-size: 17px;
+                    padding-left: 40%;
+                    margin: 10px 0;
+                }
+                a{
+                    font-weight: 700;
+                    color: white;
+                    font-size: 15px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;
+                        background: white;
+                        height: 2px;
+                        transition: all .3s ease;
+                        width: 100%;
+                        opacity: 0;
+                    }
+                    &:hover{
+                        &::before{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .custom-items{
+                transform: translate3d(3%,0,0) scale(1.06);
+            }
+            .overlay{
+                transform: translateY(0%);
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    #mainPageContent .item-wrapper .overlay .content p{
+        padding-left: 20%;
+    }
+}
+@media (min-width: 992px){
+    #mainPageContent{
+        margin-left: 100px;
+        margin-top: 0;
+    }
 }
